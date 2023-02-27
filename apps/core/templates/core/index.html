@@ -6,10 +6,16 @@
       Column 1
     </div>
     <div class="col">
-      Column 2
+      Ola {{ usuario.funcionario.nome }}
     </div>
     <div class="col">
-      Column 3
+      <a href="{% url 'logout' %}" > Logout</a>
+
+        {% if usuario.funcionario.empresa%}
+            <a href="Editar empresa">Editar empresa </a>
+        {% else %}
+        <a href="" Criar Empresa</a>
+        {% endif %}
     </div>
  </div>
 {% endblock %}
