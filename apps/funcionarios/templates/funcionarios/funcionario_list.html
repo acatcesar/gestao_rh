@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+    List
+<br>
+    {% for funcionario in object_list %}
+        <a href="{% url 'update_funcionario'  funcionario.id %}">
+            {{ funcionario }}
+        </a>
+        <a href="{% url 'delete_fucionario' funcionario.id %}">
+            Deletar
+        </a>
+        <br>
+    {%endfor%}
+{% endblock %}
