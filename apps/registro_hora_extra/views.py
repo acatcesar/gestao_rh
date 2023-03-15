@@ -26,6 +26,19 @@ class HoraExtraEdit(UpdateView):
         kwargs.update({'user': self.request.user})
         return kwargs
 
+class HoraExtraEditBase(UpdateView):
+    model = RegistroHoraExtra
+    form_class = RegistroHoraExtraForm
+    #success_url = reverse_lazy('update_hora_extra_base')
+
+    def get_success_url(self):
+        return reverse_lazy('update_hora_extra_base', args=[self.object.id]) # se eu quiser permanecer na pagína que estou
+
+    def get_form_kwargs(self):
+        kwargs = super(HoraExtraEditBase, self).get_form_kwargs()
+        kwargs.update({'user': self.request.user})
+        return kwargs
+
 class HoraExtraDelete(DeleteView):
     model = RegistroHoraExtra
     success_url = reverse_lazy('list_hora_extra')
