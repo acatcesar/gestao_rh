@@ -1,7 +1,8 @@
 .idea
-* .sqlite3
+*.sqlite3
 venv
-* .pyc
+*.pyc
 gestao_rh/__pycache__/
+static
 
 
