@@ -2,17 +2,40 @@
 
 {% block main %}
 
-    List
+    <h2 class="mt-4 mb-4 border-bottom pb-2">Lista de Funcionários </h2>
 <br>
-    {% for funcionario in object_list %}
-        <a href="{% url 'update_funcionario'  funcionario.id %}">
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nome do Funcionario</th>
+      <th scope="col">Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+        {% for funcionario in object_list %}
+    <tr>
+
+      <td class="table-primary">
+          <a href="{% url 'update_funcionario'  funcionario.id %}">
             {{ funcionario }}
         </a>
-        <a href="{% url 'delete_fucionario' funcionario.id %}">
+      </td>
+      <td class="table-primary">
+          <a href="{% url 'delete_fucionario' funcionario.id %}">
             Deletar
-        </a>
-        <br>
-    {%endfor%}
+          </a>
+      </td>
+    </tr>
+
+        {%endfor%}
+  </tbody>
+</table>
+
+
+
+
 
 <a href=" {% url 'create_funcionario' %}" class="btn btn-info"> Novo</a>
 <a href="{% url 'relatorio_funcionarios' %}" class="btn btn-info"> Gerar PDF relatório de funcionarios</a>
