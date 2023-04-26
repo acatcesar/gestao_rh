@@ -9,7 +9,7 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Nome do Funcionario</th>
+      <th scope="col">Editar Funcionario</th>
       <th scope="col">Ação</th>
     </tr>
   </thead>
@@ -18,14 +18,12 @@
     <tr>
 
       <td class="table-primary">
-          <a href="{% url 'update_funcionario'  funcionario.id %}">
-            {{ funcionario }}
-        </a>
+          <a class="btn btn-light" href="{% url 'update_funcionario'  funcionario.id %}"
+           role="button"> {{ funcionario }}  </a>
       </td>
       <td class="table-primary">
-          <a href="{% url 'delete_fucionario' funcionario.id %}">
-            Deletar
-          </a>
+          <a href="{% url 'delete_fucionario' funcionario.id %}" class="btn btn-danger">Deletar </a>
+
       </td>
     </tr>
 
@@ -37,8 +35,8 @@
 
 
 
-<a href=" {% url 'create_funcionario' %}" class="btn btn-info"> Novo</a>
-<a href="{% url 'relatorio_funcionarios' %}" class="btn btn-info"> Gerar PDF relatório de funcionarios</a>
-<a href="{% url 'relatorio_funcionarios_html' %}" class="btn btn-info"> Relatório de funcionarios HTML</a>
+<a href=" {% url 'create_funcionario' %}" class="btn btn-primary"> Novo</a>
+<a href="{% url 'relatorio_funcionarios' %}" class="btn btn-primary"> Gerar PDF relatório de funcionarios</a>
+<a href="{% url 'relatorio_funcionarios_html' %}" class="btn btn-primary"> Relatório de funcionarios HTML</a>
 
 {% endblock %}

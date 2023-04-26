@@ -4,14 +4,14 @@
 
 {% block main %}
 
-Novo
+<h2> Criar novo Departamento </h2>
 
 <form method="POST">
     {% csrf_token %}
 
     {{ form|bootstrap }}
-
-    <button type="submit" >Salvar</button>
+<br>
+    <button class="btn btn-primary" type="submit" >Salvar</button>
 </form>
 
 {% endblock %}
