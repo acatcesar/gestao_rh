@@ -1,19 +1,15 @@
-# Big Game Survey 
+# Gestão de Pessoas
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/acatcesar/gestao_rh/blob/master/LICENCE) 
 
 # Sobre o projeto
 
-https://wmazoni-sds1.netlify.app
-
-Big Game Survey é uma aplicação full stack web e mobile construída durante a 1ª edição da **Semana DevSuperior** (#sds1), evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
-
-A aplicação consiste em uma pesquisa de preferência de games, onde os dados são coletados no app mobile, e depois são listados no app web, que também apresenta um dashboard com gráficos baseados nestes dados.
+Gestão de Pessoas é uma aplicação Full stack web. A aplicação consiste no gerenciamento de pessoas e horas trabahadas em uma empresa, onde os dados são inseridos pelo administrador e gerenciados pela partaforma, que também apresenta um dashboard com gráficos baseados nestes dados e geração de relatórios.
 
 
 ## Layout web
 ![Web 1](https://github.com/acatcesar/assets/blob/main/gestao_rh/home.png)
-
 ![Web 2](https://github.com/acatcesar/assets/blob/main/gestao_rh/funcion%C3%A1rios.png)
+![Web 2](https://github.com/acatcesar/assets/blob/main/gestao_rh/funcionario_info.png)
 ![Web 2](https://github.com/acatcesar/assets/blob/main/gestao_rh/edit%20funcionario%20add.png)
 ![Web 2](https://github.com/acatcesar/assets/blob/main/gestao_rh/relat%C3%B3rio%20gerado%20pdf%20funcionario.png)
 ![Web 2](https://github.com/acatcesar/assets/blob/main/gestao_rh/add%20documento.png)
