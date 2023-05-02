@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Gestão de Pessoas é uma aplicação Full stack web. A aplicação consiste no gerenciamento de pessoas e horas trabahadas em uma empresa, onde os dados são inseridos pelo administrador e gerenciados pela partaforma, que também apresenta um dashboard com gráficos baseados nestes dados e geração de relatórios.
+Gestão de Pessoas é uma aplicação Full stack web. A aplicação consiste no gerenciamento apropriação de pessoas e suas horas trabahadas em uma empresa, onde os dados são inseridos pelo administrador e gerenciados pela partaforma, que também apresenta um dashboard com gráficos baseados nestes dados e geração de relatórios.
 
 
 ## Layout web
@@ -38,7 +38,6 @@ Gestão de Pessoas é uma aplicação Full stack web. A aplicação consiste no 
 - Back end: Debian
 - Banco de dados: SQLight
 
-# Como executar o projeto
 
 ## Back end
 Pré-requisitos: 
@@ -54,19 +53,18 @@ cd backend
 ```
 
 ## Front end web
-Pré-requisitos: npm / yarn
+Pré-requisitos: django-bootstrap-form==3.4 
+Pillow==9.4.0
 
-```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/acatcesar/gestao_rh
 
-# entrar na pasta do projeto front end web
-cd front-web
 
 # instalar dependências
 pip  install requirements.txt
 
 # executar o projeto
+python manage.py runserver  
 
 ```
 
